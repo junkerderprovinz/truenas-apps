@@ -1,0 +1,37 @@
+# Euro-Office for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app euro-office.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  euro-office:
+    image: ghcr.io/junkerderprovinz/euro-office:latest
+    container_name: euro-office
+    restart: unless-stopped
+    ports:
+      - "9900:80"
+      - "9943:443"
+    volumes:
+      - /mnt/tank/apps/euro-office/data:/var/www/euro-office/Data
+      - /mnt/tank/apps/euro-office/certs:/certs:ro
+    environment:
+      JWT_SECRET: ''  # required
+      WOPI_ENABLED: 'true'
+      JWT_ENABLED: 'true'
+      USE_UNAUTHORIZED_STORAGE: 'true'
+      ONLYOFFICE_HTTPS_HSTS_ENABLED: 'true'
+    labels:
+      homepage.href: ''
+      homepage.group: Productivity
+      homepage.name: Euro-Office
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/euro-office/icon.png?v=3
+      homepage.description: Edit office documents in the browser
+      glance.name: Euro-Office
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/euro-office/icon.png?v=3
+      glance.description: Edit office documents in the browser

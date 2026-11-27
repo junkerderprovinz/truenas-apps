@@ -1,0 +1,44 @@
+# Seafile for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app seafile.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  seafile:
+    image: junkerderprovinz/seafile:latest
+    container_name: seafile
+    restart: unless-stopped
+    ports:
+      - "8000:80"
+    volumes:
+      - /mnt/tank/apps/seafile:/shared
+    environment:
+      SEAFILE_SERVER_HOSTNAME: ''  # required
+      SEAFILE_SERVER_PROTOCOL: http
+      INIT_SEAFILE_ADMIN_EMAIL: ''  # required
+      BUILTIN_MARIADB: 'true'
+      BUILTIN_REDIS: 'true'
+      ENABLE_NOTIFICATION_SERVER: 'false'
+      SEAFILE_MYSQL_DB_PORT: "3306"
+      SEAFILE_MYSQL_DB_USER: seafile
+      SEAFILE_MYSQL_DB_CCNET_DB_NAME: ccnet_db
+      SEAFILE_MYSQL_DB_SEAFILE_DB_NAME: seafile_db
+      SEAFILE_MYSQL_DB_SEAHUB_DB_NAME: seahub_db
+      REDIS_PORT: "6379"
+      OFFICE: 'off'
+      ENABLE_SEADOC: 'false'
+    labels:
+      homepage.href: ''
+      homepage.group: Cloud
+      homepage.name: Seafile
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/seafile/icon.png
+      homepage.description: File sync and share
+      glance.name: Seafile
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/seafile/icon.png
+      glance.description: File sync and share

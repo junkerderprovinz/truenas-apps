@@ -1,0 +1,37 @@
+# PdfCraft for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app pdfcraft.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  pdfcraft:
+    image: junkerderprovinz/pdfcraft:latest
+    container_name: pdfcraft
+    restart: unless-stopped
+    shm_size: 1gb
+    ports:
+      - "32111:3001"
+      - "32110:3000"
+    volumes:
+      - /mnt/tank/apps/pdfcraft:/config
+      - /mnt/tank:/storage
+    environment:
+      TZ: Europe/Vienna
+      PUID: "568"
+      PGID: "568"
+      UMASK: "022"
+    labels:
+      homepage.href: ''
+      homepage.group: Productivity
+      homepage.name: PdfCraft
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/pdfcraft/icon.png
+      homepage.description: Read, edit, sign and OCR PDFs
+      glance.name: PdfCraft
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/pdfcraft/icon.png
+      glance.description: Read, edit, sign and OCR PDFs

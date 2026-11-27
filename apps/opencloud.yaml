@@ -1,0 +1,45 @@
+# OpenCloud for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app opencloud.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  opencloud:
+    image: junkerderprovinz/opencloud:rolling
+    container_name: opencloud
+    restart: unless-stopped
+    ports:
+      - "9200:9200"
+    volumes:
+      - /mnt/tank/apps/opencloud/config:/etc/opencloud
+      - /mnt/tank/apps/opencloud/data:/var/lib/opencloud
+    environment:
+      IDM_ADMIN_PASSWORD: ''  # required
+      OC_URL: https://YOUR-SERVER-IP:9200  # required
+      OC_INSECURE: 'true'
+      OC_LOG_LEVEL: info
+      IDM_CREATE_DEMO_USERS: 'false'
+      PROXY_TLS: 'true'
+      PROXY_ENABLE_APP_AUTH: 'false'
+      BRANDING_APP: 'false'
+      PUID: "568"
+      PGID: "568"
+      STORAGE_USERS_DRIVER: posix
+      STORAGE_USERS_DECOMPOSEDS3_REGION: default
+      OFFICE: 'off'
+      FULLTEXT_SEARCH: 'false'
+    labels:
+      homepage.href: ''
+      homepage.group: Cloud
+      homepage.name: OpenCloud
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/opencloud/icon.png?v=2
+      homepage.description: File sync and share
+      glance.name: OpenCloud
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/opencloud/icon.png?v=2
+      glance.description: File sync and share

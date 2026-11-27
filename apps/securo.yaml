@@ -1,0 +1,46 @@
+# Securo for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app securo.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  securo:
+    image: junkerderprovinz/securo:latest
+    container_name: securo
+    restart: unless-stopped
+    ports:
+      - "3000:8080"
+    volumes:
+      - /mnt/tank/apps/securo:/data
+    environment:
+      BUILTIN_POSTGRES: 'true'
+      POSTGRES_USER: postgres
+      BUILTIN_REDIS: 'true'
+      REGISTRATION_ENABLED: 'true'
+      POSTGRES_PORT: "5432"
+      POSTGRES_DB: securo
+      REDIS_PORT: "6379"
+      REDIS_DB: "0"
+      TRUSTED_PROXY_HOPS: "1"
+      SIMPLEFIN_ENABLED: 'false'
+      SIMPLEFIN_API_URL: https://beta-bridge.simplefin.org
+      OIDC_ENABLED: 'false'
+      OIDC_PROVIDER_NAME: OIDC
+      LOCAL_AUTH_ENABLED: 'true'
+      PUID: "568"
+      PGID: "568"
+    labels:
+      homepage.href: ''
+      homepage.group: Productivity
+      homepage.name: Securo
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/securo/icon.png
+      homepage.description: Personal finance manager
+      glance.name: Securo
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/securo/icon.png
+      glance.description: Personal finance manager

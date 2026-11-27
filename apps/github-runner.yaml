@@ -1,0 +1,37 @@
+# GitHub-Runner for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app github-runner.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  github-runner:
+    image: junkerderprovinz/github-runner:latest
+    container_name: github-runner
+    restart: unless-stopped
+    stop_grace_period: 60s
+    ports:
+      - "8080:8080"
+    volumes:
+      - /mnt/tank/apps/github-runner:/config
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      RUNNER_NAME: GitHub-Runner
+      LABELS: self-hosted
+      NO_DEFAULT_LABELS: 'false'
+      RUN_AS_ROOT: 'true'
+      DEREGISTER_ON_STOP: 'true'
+      RETRY_SECONDS: "300"
+    labels:
+      homepage.group: Tools
+      homepage.name: GitHub-Runner
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/github-runner/icon.png
+      homepage.description: GitHub Actions runners for several repositories
+      glance.name: GitHub-Runner
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/github-runner/icon.png
+      glance.description: GitHub Actions runners for several repositories

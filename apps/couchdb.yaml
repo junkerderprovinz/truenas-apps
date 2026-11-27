@@ -1,0 +1,33 @@
+# couchdb for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app couchdb.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  couchdb:
+    image: couchdb:latest
+    container_name: couchdb
+    restart: unless-stopped
+    ports:
+      - "5984:5984"
+    volumes:
+      - /mnt/tank/apps/couchdb/data:/opt/couchdb/data
+      - /mnt/tank/apps/couchdb/local.d:/opt/couchdb/etc/local.d
+    environment:
+      COUCHDB_USER: admin
+      COUCHDB_PASSWORD: ''  # required
+    labels:
+      homepage.href: ''
+      homepage.group: Tools
+      homepage.name: CouchDB
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/couchdb/icon.png?v=2
+      homepage.description: Document database over HTTP and JSON
+      glance.name: CouchDB
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/couchdb/icon.png?v=2
+      glance.description: Document database over HTTP and JSON

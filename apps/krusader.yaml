@@ -1,0 +1,40 @@
+# Krusader for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app krusader.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  krusader:
+    image: junkerderprovinz/krusader:latest
+    container_name: krusader
+    restart: unless-stopped
+    shm_size: 1gb
+    ports:
+      - "32091:3001"
+      - "32090:3000"
+    volumes:
+      - /mnt/tank/apps/krusader:/config
+      - /mnt/tank:/storage
+    environment:
+      KRUSADER_LANG: de = Deutsch
+      KRUSADER_THEME: dark
+      KEYBOARD_LAYOUT: us
+      TZ: Europe/Vienna
+      PUID: "568"
+      PGID: "568"
+      UMASK: "022"
+    labels:
+      homepage.href: ''
+      homepage.group: Tools
+      homepage.name: Krusader
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/krusader/icon.png
+      homepage.description: Twin-pane file manager on a web desktop
+      glance.name: Krusader
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/krusader/icon.png
+      glance.description: Twin-pane file manager on a web desktop

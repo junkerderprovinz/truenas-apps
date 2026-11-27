@@ -1,0 +1,33 @@
+# KnightLoader for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app knightloader.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  knightloader:
+    image: junkerderprovinz/knightloader:latest
+    container_name: knightloader
+    restart: unless-stopped
+    ports:
+      - "8749:8749"
+    volumes:
+      - /mnt/tank/apps/knightloader:/data
+      - /mnt/tank/downloads:/data/downloads
+      - /mnt/tank:/mnt/user
+    environment:
+      UMASK: "022"
+    labels:
+      homepage.href: ''
+      homepage.group: Downloads
+      homepage.name: KnightLoader
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/knightloader/icon.png?v=4
+      homepage.description: Download manager for hosters, torrents and Usenet
+      glance.name: KnightLoader
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/knightloader/icon.png?v=4
+      glance.description: Download manager for hosters, torrents and Usenet

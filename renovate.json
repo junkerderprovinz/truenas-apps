@@ -1,0 +1,13 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "local>junkerderprovinz/junkerderprovinz//renovate/base"
+  ],
+  "packageRules": [
+    {
+      "description": "The compose files are rebuilt from unraid-apps and stay on :latest like the Unraid templates. A digest would freeze every install on one build, and the next rebuild would drop it anyway.",
+      "matchManagers": ["docker-compose"],
+      "enabled": false
+    }
+  ]
+}

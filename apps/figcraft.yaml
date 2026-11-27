@@ -1,0 +1,37 @@
+# FigCraft for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app figcraft.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  figcraft:
+    image: junkerderprovinz/figcraft:latest
+    container_name: figcraft
+    restart: unless-stopped
+    shm_size: 1gb
+    ports:
+      - "32041:3001"
+      - "32040:3000"
+    volumes:
+      - /mnt/tank/apps/figcraft:/config
+      - /mnt/tank:/storage
+    environment:
+      TZ: Europe/Vienna
+      PUID: "568"
+      PGID: "568"
+      UMASK: "022"
+    labels:
+      homepage.href: ''
+      homepage.group: Productivity
+      homepage.name: FigCraft
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/figcraft/icon.png
+      homepage.description: Interface design and clickable prototypes
+      glance.name: FigCraft
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/figcraft/icon.png
+      glance.description: Interface design and clickable prototypes

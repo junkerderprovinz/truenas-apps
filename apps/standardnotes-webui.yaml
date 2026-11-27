@@ -1,0 +1,27 @@
+# StandardNotes-WebUI for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app standardnotes-webui.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  standardnotes-webui:
+    image: standardnotes/web:latest
+    container_name: standardnotes-webui
+    restart: unless-stopped
+    ports:
+      - "3001:80"
+    labels:
+      homepage.href: ''
+      homepage.group: Productivity
+      homepage.name: Standard Notes
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/standardnotes-webui/icon.png
+      homepage.description: Web client for encrypted notes
+      glance.name: Standard Notes
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/standardnotes-webui/icon.png
+      glance.description: Web client for encrypted notes

@@ -1,0 +1,58 @@
+# HandBrake for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app handbrake.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  handbrake:
+    image: junkerderprovinz/handbrake:latest
+    container_name: handbrake
+    restart: unless-stopped
+    shm_size: 1gb
+    ports:
+      - "32071:3001"
+      - "32070:3000"
+    volumes:
+      - /mnt/tank/apps/handbrake:/config
+      - /mnt/tank:/storage:ro
+      - /mnt/tank/media/handbrake/watch:/watch
+      - /mnt/tank/media/handbrake/output:/output
+    environment:
+      HANDBRAKE_THEME: dark
+      KEYBOARD_LAYOUT: us
+      GPU_VENDOR: none
+      APP_NICENESS: "0"
+      AUTOMATED_CONVERSION: "1"
+      AUTOMATED_CONVERSION_PRESET: General/Very Fast 1080p30
+      AUTOMATED_CONVERSION_FORMAT: mp4
+      AUTOMATED_CONVERSION_KEEP_SOURCE: "1"
+      AUTOMATED_CONVERSION_OVERWRITE_OUTPUT: "0"
+      AUTOMATED_CONVERSION_SOURCE_STABLE_TIME: "5"
+      AUTOMATED_CONVERSION_CHECK_INTERVAL: "5"
+      AUTOMATED_CONVERSION_MAX_WATCH_FOLDERS: "5"
+      WEB_FILE_MANAGER: "1"
+      WEB_FILE_MANAGER_ALLOWED_PATHS: AUTO
+      WEB_TERMINAL: "0"
+      WEB_TERMINAL_SHELL_PATH: /bin/bash
+      WEB_NOTIFICATION: "0"
+      ATTACHED_DEVICES_PERMS: /dev/sr*
+      INSTALL_LIBDVDCSS: 'false'
+      TZ: Europe/Vienna
+      PUID: "568"
+      PGID: "568"
+      UMASK: "022"
+    labels:
+      homepage.href: ''
+      homepage.group: Media
+      homepage.name: HandBrake
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/handbrake/icon.png
+      homepage.description: Video converter with a watch folder
+      glance.name: HandBrake
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/handbrake/icon.png
+      glance.description: Video converter with a watch folder

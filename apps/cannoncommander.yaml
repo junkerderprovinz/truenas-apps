@@ -1,0 +1,45 @@
+# CannonCommander for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app cannoncommander.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  cannoncommander:
+    image: junkerderprovinz/cannoncommander:latest
+    container_name: cannoncommander
+    restart: unless-stopped
+    hostname: cannoncommander
+    ports:
+      - "8480:80"
+    volumes:
+      - /mnt/tank/apps/cannoncommander:/config
+      - /mnt:/mnt/user
+    environment:
+      PUID: "568"
+      PGID: "568"
+      UMASK: "022"
+      TZ: Europe/Berlin
+      CC_UNRAID_SOCKET: 'false'
+    labels:
+      homepage.href: ''
+      homepage.group: Tools
+      homepage.name: CannonCommander
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/cannoncommander/icon.png?v=2
+      homepage.description: Two-panel file manager
+      glance.name: CannonCommander
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/cannoncommander/icon.png?v=2
+      glance.description: Two-panel file manager
+    devices:
+      - /dev/fuse
+    cap_add:
+      - SYS_ADMIN
+      - DAC_READ_SEARCH
+      - DAC_OVERRIDE
+    security_opt:
+      - apparmor:unconfined

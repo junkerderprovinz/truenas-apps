@@ -1,0 +1,36 @@
+# RustFS for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app rustfs.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  rustfs:
+    image: rustfs/rustfs:latest
+    container_name: rustfs
+    restart: unless-stopped
+    user: "0:0"
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - /mnt/tank/apps/rustfs/data:/data
+    environment:
+      RUSTFS_ACCESS_KEY: ''  # required
+      RUSTFS_SECRET_KEY: ''  # required
+      RUSTFS_CONSOLE_CORS_ALLOWED_ORIGINS: '*'
+      RUSTFS_OBS_LOGGER_LEVEL: warn
+    labels:
+      homepage.href: ''
+      homepage.group: Backup
+      homepage.name: RustFS
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/rustfs/icon.png
+      homepage.description: S3 object store written in Rust
+      glance.name: RustFS
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/rustfs/icon.png
+      glance.description: S3 object store written in Rust

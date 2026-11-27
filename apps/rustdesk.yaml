@@ -1,0 +1,45 @@
+# RustDesk for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app rustdesk.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  rustdesk:
+    image: junkerderprovinz/rustdesk:latest
+    container_name: rustdesk
+    restart: unless-stopped
+    ports:
+      - "21114:21114"
+      - "21115:21115"
+      - "21116:21116"
+      - "21116:21116/udp"
+      - "21117:21117"
+      - "21118:21118"
+      - "21119:21119"
+    volumes:
+      - /mnt/tank/apps/rustdesk:/data
+      - /mnt/tank/apps/rustdesk/api:/app/data
+    environment:
+      RELAY: ''  # required
+      RUSTDESK_API_RUSTDESK_ID_SERVER: ''  # required
+      RUSTDESK_API_RUSTDESK_RELAY_SERVER: ''  # required
+      RUSTDESK_API_RUSTDESK_API_SERVER: ''  # required
+      ENCRYPTED_ONLY: "1"
+      MUST_LOGIN: N
+      RUSTDESK_API_LANG: en
+      TZ: Europe/Vienna
+    labels:
+      homepage.href: ''
+      homepage.group: Network
+      homepage.name: RustDesk
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/rustdesk/icon.png?v=2
+      homepage.description: Remote desktop server with a web console
+      glance.name: RustDesk
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/rustdesk/icon.png?v=2
+      glance.description: Remote desktop server with a web console

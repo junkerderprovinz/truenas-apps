@@ -1,0 +1,35 @@
+# ArrowLoop for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app arrowloop.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  arrowloop:
+    image: junkerderprovinz/arrowloop:latest
+    container_name: arrowloop
+    restart: unless-stopped
+    hostname: arrowloop
+    ports:
+      - "8422:8422"
+    volumes:
+      - /mnt/tank/apps/arrowloop:/config
+      - /mnt/tank:/data
+    environment:
+      TZ: Europe/Berlin
+      ARROWLOOP_ADDR: "0.0.0.0:8422"
+      ARROWLOOP_UMASK: "000"
+    labels:
+      homepage.href: ''
+      homepage.group: Backup
+      homepage.name: ArrowLoop
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/arrowloop/icon.png
+      homepage.description: Two-way file sync that shows its plan first
+      glance.name: ArrowLoop
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/arrowloop/icon.png
+      glance.description: Two-way file sync that shows its plan first

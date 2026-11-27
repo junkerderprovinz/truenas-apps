@@ -1,0 +1,37 @@
+# LightCraft for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app lightcraft.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  lightcraft:
+    image: junkerderprovinz/lightcraft:latest
+    container_name: lightcraft
+    restart: unless-stopped
+    shm_size: 1gb
+    ports:
+      - "32101:3001"
+      - "32100:3000"
+    volumes:
+      - /mnt/tank/apps/lightcraft:/config
+      - /mnt/tank:/storage
+    environment:
+      TZ: Europe/Vienna
+      PUID: "568"
+      PGID: "568"
+      UMASK: "022"
+    labels:
+      homepage.href: ''
+      homepage.group: Media
+      homepage.name: LightCraft
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/lightcraft/icon.png
+      homepage.description: Photo library and raw developer
+      glance.name: LightCraft
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/lightcraft/icon.png
+      glance.description: Photo library and raw developer

@@ -1,0 +1,34 @@
+# Silo for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app silo.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  silo:
+    image: pgsty/silo:latest
+    container_name: silo
+    restart: unless-stopped
+    ports:
+      - "9000:9000"
+      - "9001:9001"
+    volumes:
+      - /mnt/tank/apps/silo/data:/data
+    environment:
+      MINIO_ROOT_USER: ''  # required
+      MINIO_ROOT_PASSWORD: ''  # required
+    labels:
+      homepage.href: ''
+      homepage.group: Backup
+      homepage.name: Silo
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/silo/icon.png
+      homepage.description: S3 object store with a web console
+      glance.name: Silo
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/silo/icon.png
+      glance.description: S3 object store with a web console
+    command: server /data --console-address ":9001"

@@ -1,0 +1,36 @@
+# Stellarium for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app stellarium.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  stellarium:
+    image: junkerderprovinz/stellarium:latest
+    container_name: stellarium
+    restart: unless-stopped
+    shm_size: 1gb
+    ports:
+      - "32151:3001"
+      - "32150:3000"
+    volumes:
+      - /mnt/tank/apps/stellarium:/config
+    environment:
+      TZ: Europe/Vienna
+      PUID: "568"
+      PGID: "568"
+      UMASK: "022"
+    labels:
+      homepage.href: ''
+      homepage.group: Tools
+      homepage.name: Stellarium
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/stellarium/icon.png
+      homepage.description: Planetarium in the browser
+      glance.name: Stellarium
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/stellarium/icon.png
+      glance.description: Planetarium in the browser

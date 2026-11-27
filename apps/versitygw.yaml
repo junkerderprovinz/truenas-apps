@@ -1,0 +1,45 @@
+# VersityGW for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app versitygw.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  versitygw:
+    image: versity/versitygw:latest
+    container_name: versitygw
+    restart: unless-stopped
+    ports:
+      - "7070:7070"
+      - "7071:7071"
+      - "7080:7080"
+    volumes:
+      - /mnt/tank/apps/versitygw/data:/data
+      - /mnt/tank/apps/versitygw:/config
+    environment:
+      VGW_BACKEND: posix
+      VGW_BACKEND_ARG: /data
+      ROOT_ACCESS_KEY: ''  # required
+      ROOT_SECRET_KEY: ''  # required
+      VGW_PORT: ":7070"
+      VGW_WEBUI_PORT: ":7071"
+      VGW_ADMIN_PORT: ":7080"
+      VGW_WEBUI_NO_TLS: 'true'
+      VGW_IAM_DIR: /config
+      VGW_REGION: us-east-1
+      VGW_HEALTH: /_health
+      VGW_DISABLE_OTMP: 'false'
+    labels:
+      homepage.href: ''
+      homepage.group: Backup
+      homepage.name: VersityGW
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/versitygw/icon.png
+      homepage.description: S3 API in front of an existing share
+      glance.name: VersityGW
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/versitygw/icon.png
+      glance.description: S3 API in front of an existing share

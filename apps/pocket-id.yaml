@@ -1,0 +1,41 @@
+# Pocket-ID for TrueNAS, from junkerderprovinz/truenas-apps.
+# Paste it under Apps, Discover Apps, then Install via YAML in the menu beside
+# Custom App, and name the app pocket-id.
+#
+# Replace tank with the name of your pool and fill in every value marked
+# "required". Docker creates the folders on the first start. Create datasets
+# for them first if you want snapshots of each one.
+#
+# Built from the Unraid template in junkerderprovinz/unraid-apps. Change the
+# template there, not this file.
+
+services:
+  pocket-id:
+    image: pocketid/pocket-id:v2
+    container_name: pocket-id
+    restart: unless-stopped
+    ports:
+      - "1411:1411"
+    volumes:
+      - /mnt/tank/apps/pocket-id:/app/data
+    environment:
+      APP_URL: https://id.example.com  # required
+      ENCRYPTION_KEY: ''  # required
+      TRUST_PROXY: 'false'
+      PUID: "568"
+      PGID: "568"
+      CLOUDFLARE_LOCATION_HEADERS: 'false'
+      AUDIT_LOG_RETENTION_DAYS: "90"
+      UI_CONFIG_DISABLED: 'false'
+      ANALYTICS_DISABLED: 'false'
+      VERSION_CHECK_DISABLED: 'false'
+      LOG_LEVEL: info
+    labels:
+      homepage.href: ''
+      homepage.group: Security
+      homepage.name: Pocket ID
+      homepage.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/pocket-id/icon.png
+      homepage.description: Passkey login for your apps
+      glance.name: Pocket ID
+      glance.icon: https://raw.githubusercontent.com/junkerderprovinz/unraid-apps/main/pocket-id/icon.png
+      glance.description: Passkey login for your apps
