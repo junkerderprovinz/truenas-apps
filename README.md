@@ -7,14 +7,14 @@
 
 <p align="center">
   <a href="https://github.com/junkerderprovinz/truenas-apps/actions/workflows/generate.yml"><img src="https://img.shields.io/github/actions/workflow/status/junkerderprovinz/truenas-apps/generate.yml?branch=main&label=Generate&style=for-the-badge&logo=githubactions&logoColor=white" alt="Generate" height="36"></a>&nbsp;
-  <a href="#apps"><img src="https://img.shields.io/badge/Apps-40-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Apps" height="36"></a>&nbsp;
+  <a href="#apps"><img src="https://img.shields.io/badge/Apps-39-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Apps" height="36"></a>&nbsp;
   <a href="https://github.com/junkerderprovinz/truenas-apps/commits/main"><img src="https://img.shields.io/github/last-commit/junkerderprovinz/truenas-apps?branch=main&style=for-the-badge&logo=git&logoColor=white&label=Updated" alt="Last commit" height="36"></a>&nbsp;
   <a href="https://www.truenas.com/truenas-community-edition/"><img src="https://img.shields.io/badge/TrueNAS-Install%20via%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" alt="TrueNAS Install via YAML" height="36"></a>&nbsp;
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License" height="36"></a>
 </p>
 
 <p align="center">
-Ready-made app files for <a href="https://www.truenas.com/truenas-community-edition/">TrueNAS</a> with junkerderprovinz's containers, grouped like the profile: <b>Apps</b> (my own software), <b>Images</b> (my own image builds of third-party apps) and <b>Wrappers</b> (thin templates over an upstream image). TrueNAS installs apps from its own catalog only, so each app here is one file to paste under <b>Install via YAML</b>. An app that made it into the official catalog links there instead.
+Ready-made app files for <a href="https://www.truenas.com/truenas-community-edition/">TrueNAS</a> with junkerderprovinz's containers, grouped like the profile: <b>Apps</b> (my own software), <b>Images</b> (my own image builds of third-party apps) and <b>Wrappers</b> (thin templates over an upstream image). TrueNAS installs apps from its own catalog only, so each app here is one file to paste under <b>Install via YAML</b>.
 </p>
 
 
@@ -30,16 +30,6 @@ Ready-made app files for <a href="https://www.truenas.com/truenas-community-edit
 
 **ArrowLoop**<br>
 Two-way file sync that shows you the plan before it touches a file, sends deletions to a trash and stops a run that would delete too much.
-
-<br clear="all">
-
-<a id="bombvault"></a>
-<img src=".github/readme-icons/bombvault.png" width="84" align="left" alt="BombVault">
-<a href="https://github.com/junkerderprovinz/bombvault#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="https://apps.truenas.com/catalog/bombvault_community/"><img src="https://img.shields.io/badge/TrueNAS%20catalog-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS app catalog"></a>
-
-**BombVault**<br>
-Backup and full disaster recovery for containers, VMs and the flash, powered by restic, with one-click backup and cross-server restore.
 
 <br clear="all">
 
@@ -445,8 +435,6 @@ TrueNAS pulls the image and starts the app. The file lists the ports its web pag
 
 A few apps share a port: CastleParcel and Securo use 3000, Excalidraw and GitHub Runner 8080, RustFS and Silo 9000 and 9001. To run both of a pair, change the number left of the colon for one of them.
 
-BombVault is in the official TrueNAS catalog: search for it under **Discover Apps** and install it from there.
-
 Questions and bugs go to the issue tracker of the app's own repository, linked from **Repository & ReadMe** on its card.
 
 
@@ -467,7 +455,7 @@ To change an app, edit its template in unraid-apps, not the files in `apps/`, `.
 python3 tools/generate.py ../unraid-apps
 ```
 
-`apps.json` lists the apps. Per app it can set where a folder goes on the pool (`paths`) and where it shows up in the container (`targets`), give ports another host port (`ports`), leave a path out (`drop_paths`), set Docker's `security_opt` (`security_opt`), set variables (`env`), read a template file with another name (`xml`) or link the official TrueNAS catalog instead of a file (`catalog`).
+`apps.json` lists the apps. Per app it can set where a folder goes on the pool (`paths`) and where it shows up in the container (`targets`), give ports another host port (`ports`), leave a path out (`drop_paths`), set Docker's `security_opt` (`security_opt`), set variables (`env`), or read a template file with another name (`xml`).
 
 
 ## How AI is used here

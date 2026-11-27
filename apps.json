@@ -1,6 +1,5 @@
 {
   "arrowloop": {"paths": {"/data": "/mnt/tank"}},
-  "bombvault": {"xml": "my-BombVault.xml", "catalog": "https://apps.truenas.com/catalog/bombvault_community/"},
   "cadcraft": {"paths": {"/storage": "/mnt/tank"}, "ports": {"3000": 32000, "3001": 32001}},
   "cannoncommander": {"paths": {"/mnt": "/mnt"}, "targets": {"/mnt": "/mnt/user"}, "drop_paths": ["/var/local/emhttp", "/boot/config"], "security_opt": ["apparmor:unconfined"]},
   "castleparcel": {},
