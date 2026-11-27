@@ -40,7 +40,6 @@ HEADER = """\
 
 """
 
-BADGE = '<a href="apps/{app}.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>'
 
 
 class Dumper(yaml.SafeDumper):
@@ -115,7 +114,7 @@ def readme_cards(feed, apps):
 
     Each app keeps the card, description and group (Apps, Images, Wrappers) it
     has in unraid-apps, so the two READMEs cannot drift apart. The compose
-    button gives way to the TrueNAS one.
+    link gives way to the TrueNAS file.
     """
     source = (feed / "README.md").read_text(encoding="utf-8")
     groups = {}
@@ -123,11 +122,9 @@ def readme_cards(feed, apps):
         start = source.index(f'<img src=".github/readme-icons/{app}.png"')
         end = source.index('<br clear="all">', start) + len('<br clear="all">')
         heading = list(re.finditer(r"^## (\w+)\n\n(\*.+\*)$", source[:start], re.M))[-1]
-        card = re.sub(r'href="([\w-]+/README\.md)"', rf'href="{FEED_URL}/blob/main/\1"', source[start:end])
-        lines = [line for line in card.split("\n") if 'alt="Docker compose file"' not in line]
-        repo = next(i for i, line in enumerate(lines) if 'alt="Repository &amp; ReadMe"' in line)
-        lines.insert(repo + 1, BADGE.format(app=app))
-        groups.setdefault(heading.group(1), (heading.group(2), []))[1].append(f'<a id="{app}"></a>\n' + "\n".join(lines))
+        card = re.sub(r"\]\(([\w-]+/README\.md)\)", rf"]({FEED_URL}/blob/main/\1)", source[start:end])
+        card = re.sub(r"\)\*\*[^\n]*<br>", f")** · [TrueNAS YAML](apps/{app}.yaml)<br>", card, count=1)
+        groups.setdefault(heading.group(1), (heading.group(2), []))[1].append(f'<a id="{app}"></a>\n{card}')
     order = [h for h in ("Apps", "Images", "Wrappers") if h in groups]
     parts = [f"## {h}\n\n{groups[h][0]}\n\n" + "\n\n".join(groups[h][1]) for h in order]
     return "\n\n\n".join(parts)

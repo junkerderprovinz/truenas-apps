@@ -25,50 +25,40 @@ Ready-made app files for <a href="https://www.truenas.com/truenas-community-edit
 
 <a id="arrowloop"></a>
 <img src=".github/readme-icons/arrowloop.png" width="84" align="left" alt="ArrowLoop">
-<a href="https://github.com/junkerderprovinz/arrowloop#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/arrowloop.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**ArrowLoop**<br>
+**[ArrowLoop](https://github.com/junkerderprovinz/arrowloop#readme)** · [TrueNAS YAML](apps/arrowloop.yaml)<br>
 Two-way file sync that shows you the plan before it touches a file, sends deletions to a trash and stops a run that would delete too much.
 
 <br clear="all">
 
 <a id="cannoncommander"></a>
 <img src=".github/readme-icons/cannoncommander.png" width="84" align="left" alt="CannonCommander">
-<a href="https://github.com/junkerderprovinz/cannoncommander#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/cannoncommander.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**CannonCommander**<br>
+**[CannonCommander](https://github.com/junkerderprovinz/cannoncommander#readme)** · [TrueNAS YAML](apps/cannoncommander.yaml)<br>
 The most beautiful file manager you will ever run, and the only one you need: two panels, F5 to copy, jobs in the background and a trash for second thoughts.
 
 <br clear="all">
 
 <a id="castleparcel"></a>
 <img src=".github/readme-icons/castleparcel.png" width="84" align="left" alt="CastleParcel">
-<a href="https://github.com/junkerderprovinz/castleparcel#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/castleparcel.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**CastleParcel**<br>
-The big-file transfer site you know, on your own server and sealed: encrypted in your browser, with an optional owner sign-in, self-expiring share links, file requests and notes. Formerly featherdrop.
+**[CastleParcel](https://github.com/junkerderprovinz/castleparcel#readme)** · [TrueNAS YAML](apps/castleparcel.yaml)<br>
+The big-file transfer site you know, on your own server and sealed: encrypted in your browser, with an optional owner sign-in, self-expiring share links, file requests and notes.
 
 <br clear="all">
 
 <a id="knightloader"></a>
 <img src=".github/readme-icons/knightloader.png" width="84" align="left" alt="KnightLoader">
-<a href="https://github.com/junkerderprovinz/knightloader#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/knightloader.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**KnightLoader**<br>
+**[KnightLoader](https://github.com/junkerderprovinz/knightloader#readme)** · [TrueNAS YAML](apps/knightloader.yaml)<br>
 Self-hosted download manager for hosters, debrid, torrents, Usenet and video, with an Android app and a browser extension.
 
 <br clear="all">
 
 <a id="trickwork"></a>
 <img src=".github/readme-icons/trickwork.png" width="84" align="left" alt="TrickWork">
-<a href="https://github.com/junkerderprovinz/trickwork#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/trickwork.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**TrickWork**<br>
+**[TrickWork](https://github.com/junkerderprovinz/trickwork#readme)** · [TrueNAS YAML](apps/trickwork.yaml)<br>
 Turns images into proportional-font-aware ASCII art - a rebuild of ASCII Gen 2, picking characters by real ink coverage, not brightness.
 
 <br clear="all">
@@ -80,260 +70,208 @@ Turns images into proportional-font-aware ASCII art - a rebuild of ASCII Gen 2, 
 
 <a id="cadcraft"></a>
 <img src=".github/readme-icons/cadcraft.png" width="84" align="left" alt="CADCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#cadcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/cadcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**CADCraft**<br>
+**[CADCraft](https://github.com/junkerderprovinz/artcraft-apps#cadcraft)** · [TrueNAS YAML](apps/cadcraft.yaml)<br>
 CADCraft on a Selkies web desktop: 2D drafting with layers, blocks and dimensions, and DXF and DWG files, all in the browser.
 
 <br clear="all">
 
 <a id="deckcraft"></a>
 <img src=".github/readme-icons/deckcraft.png" width="84" align="left" alt="DeckCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#deckcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/deckcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**DeckCraft**<br>
+**[DeckCraft](https://github.com/junkerderprovinz/artcraft-apps#deckcraft)** · [TrueNAS YAML](apps/deckcraft.yaml)<br>
 DeckCraft on a Selkies web desktop, for building and presenting PowerPoint decks from any browser.
 
 <br clear="all">
 
 <a id="designcraft"></a>
 <img src=".github/readme-icons/designcraft.png" width="84" align="left" alt="DesignCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#designcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/designcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**DesignCraft**<br>
+**[DesignCraft](https://github.com/junkerderprovinz/artcraft-apps#designcraft)** · [TrueNAS YAML](apps/designcraft.yaml)<br>
 DesignCraft on a Selkies web desktop: lay out magazines and flyers in the browser and export print-ready PDFs.
 
 <br clear="all">
 
 <a id="effectcraft"></a>
 <img src=".github/readme-icons/effectcraft.png" width="84" align="left" alt="EffectCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#effectcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/effectcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**EffectCraft**<br>
+**[EffectCraft](https://github.com/junkerderprovinz/artcraft-apps#effectcraft)** · [TrueNAS YAML](apps/effectcraft.yaml)<br>
 EffectCraft on a Selkies web desktop, for motion graphics with compositions, keyframes and effects in the browser.
 
 <br clear="all">
 
 <a id="euro-office"></a>
 <img src=".github/readme-icons/euro-office.png" width="84" align="left" alt="Euro Office">
-<a href="https://github.com/junkerderprovinz/euro-office#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/euro-office.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**Euro Office**<br>
+**[Euro Office](https://github.com/junkerderprovinz/euro-office#readme)** · [TrueNAS YAML](apps/euro-office.yaml)<br>
 Sovereign, OnlyOffice-compatible document server for browser editing of Office and OpenDocument files, wired into OpenCloud over WOPI.
 
 <br clear="all">
 
 <a id="excalidraw"></a>
 <img src=".github/readme-icons/excalidraw.png" width="84" align="left" alt="Excalidraw">
-<a href="https://github.com/junkerderprovinz/excalidraw#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/excalidraw.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**Excalidraw**<br>
+**[Excalidraw](https://github.com/junkerderprovinz/excalidraw#readme)** · [TrueNAS YAML](apps/excalidraw.yaml)<br>
 The hand-drawn whiteboard, built so it keeps to itself: shared links, live collaboration, the session scene and even the fonts all come from your own server.
 
 <br clear="all">
 
 <a id="figcraft"></a>
 <img src=".github/readme-icons/figcraft.png" width="84" align="left" alt="FigCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#figcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/figcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**FigCraft**<br>
+**[FigCraft](https://github.com/junkerderprovinz/artcraft-apps#figcraft)** · [TrueNAS YAML](apps/figcraft.yaml)<br>
 FigCraft on a Selkies web desktop: design interfaces with frames and components and click through prototypes in the browser.
 
 <br clear="all">
 
 <a id="filebot"></a>
 <img src=".github/readme-icons/filebot.png" width="84" align="left" alt="FileBot">
-<a href="https://github.com/junkerderprovinz/filebot#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/filebot.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**FileBot**<br>
+**[FileBot](https://github.com/junkerderprovinz/filebot#readme)** · [TrueNAS YAML](apps/filebot.yaml)<br>
 The FileBot media renamer in your browser on a fast Selkies web desktop, dark from the first start. Bring your own FileBot license.
 
 <br clear="all">
 
 <a id="filmcraft"></a>
 <img src=".github/readme-icons/filmcraft.png" width="84" align="left" alt="FilmCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#filmcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/filmcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**FilmCraft**<br>
+**[FilmCraft](https://github.com/junkerderprovinz/artcraft-apps#filmcraft)** · [TrueNAS YAML](apps/filmcraft.yaml)<br>
 FilmCraft on a Selkies web desktop, a nonlinear video editor that cuts the footage on your array from any browser.
 
 <br clear="all">
 
 <a id="garage"></a>
 <img src=".github/readme-icons/garage.png" width="84" align="left" alt="Garage">
-<a href="https://github.com/junkerderprovinz/garage#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/garage.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**Garage**<br>
+**[Garage](https://github.com/junkerderprovinz/garage#readme)** · [TrueNAS YAML](apps/garage.yaml)<br>
 Garage's S3-compatible object store and its web admin panel in one container, with the single-node layout and S3 keys created automatically.
 
 <br clear="all">
 
 <a id="gridcraft"></a>
 <img src=".github/readme-icons/gridcraft.png" width="84" align="left" alt="GridCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#gridcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/gridcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**GridCraft**<br>
+**[GridCraft](https://github.com/junkerderprovinz/artcraft-apps#gridcraft)** · [TrueNAS YAML](apps/gridcraft.yaml)<br>
 GridCraft on a Selkies web desktop: a spreadsheet with formulas and charts that opens and saves Excel workbooks.
 
 <br clear="all">
 
 <a id="handbrake"></a>
 <img src=".github/readme-icons/handbrake.png" width="84" align="left" alt="HandBrake">
-<a href="https://github.com/junkerderprovinz/handbrake#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/handbrake.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**HandBrake**<br>
+**[HandBrake](https://github.com/junkerderprovinz/handbrake#readme)** · [TrueNAS YAML](apps/handbrake.yaml)<br>
 HandBrake's full GUI on a fast Selkies web desktop, GPU-accelerated on NVIDIA, Intel and AMD, with a watch folder that converts on its own.
 
 <br clear="all">
 
 <a id="jdownloader"></a>
 <img src=".github/readme-icons/jdownloader.png" width="84" align="left" alt="JDownloader">
-<a href="https://github.com/junkerderprovinz/jdownloader#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/jdownloader.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**JDownloader**<br>
+**[JDownloader](https://github.com/junkerderprovinz/jdownloader#readme)** · [TrueNAS YAML](apps/jdownloader.yaml)<br>
 JDownloader 2 with a complete, sleek dark UI out of the box, on a fast Selkies web desktop in your browser. No VNC client, no install.
 
 <br clear="all">
 
 <a id="krusader"></a>
 <img src=".github/readme-icons/krusader.png" width="84" align="left" alt="Krusader">
-<a href="https://github.com/junkerderprovinz/krusader#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/krusader.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**Krusader**<br>
+**[Krusader](https://github.com/junkerderprovinz/krusader#readme)** · [TrueNAS YAML](apps/krusader.yaml)<br>
 Twin-pane KDE file manager with a native dark theme on a fast Selkies web desktop, with Kate, krename and RAR built in.
 
 <br clear="all">
 
 <a id="lightcraft"></a>
 <img src=".github/readme-icons/lightcraft.png" width="84" align="left" alt="LightCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#lightcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/lightcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**LightCraft**<br>
+**[LightCraft](https://github.com/junkerderprovinz/artcraft-apps#lightcraft)** · [TrueNAS YAML](apps/lightcraft.yaml)<br>
 LightCraft on a Selkies web desktop, a photo library and raw developer that sits right next to the photos on your array.
 
 <br clear="all">
 
 <a id="opencloud"></a>
 <img src=".github/readme-icons/opencloud.png" width="84" align="left" alt="OpenCloud">
-<a href="https://github.com/junkerderprovinz/opencloud#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/opencloud.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**OpenCloud**<br>
+**[OpenCloud](https://github.com/junkerderprovinz/opencloud#readme)** · [TrueNAS YAML](apps/opencloud.yaml)<br>
 One-click OpenCloud file sync &amp; share: auto-runs init, heals appdata permissions and honours PUID/PGID.
 
 <br clear="all">
 
 <a id="pdfcraft"></a>
 <img src=".github/readme-icons/pdfcraft.png" width="84" align="left" alt="PdfCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#pdfcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/pdfcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**PdfCraft**<br>
+**[PdfCraft](https://github.com/junkerderprovinz/artcraft-apps#pdfcraft)** · [TrueNAS YAML](apps/pdfcraft.yaml)<br>
 PdfCraft on a Selkies web desktop, for reading, editing, signing and running OCR on PDFs in the browser.
 
 <br clear="all">
 
 <a id="photocraft"></a>
 <img src=".github/readme-icons/photocraft.png" width="84" align="left" alt="PhotoCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#photocraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/photocraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**PhotoCraft**<br>
+**[PhotoCraft](https://github.com/junkerderprovinz/artcraft-apps#photocraft)** · [TrueNAS YAML](apps/photocraft.yaml)<br>
 PhotoCraft on a Selkies web desktop: a layered photo editor in the browser that opens PSD, Krita and Affinity files.
 
 <br clear="all">
 
 <a id="prusaslicer"></a>
 <img src=".github/readme-icons/prusaslicer.png" width="84" align="left" alt="PrusaSlicer">
-<a href="https://github.com/junkerderprovinz/prusaslicer#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/prusaslicer.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**PrusaSlicer**<br>
+**[PrusaSlicer](https://github.com/junkerderprovinz/prusaslicer#readme)** · [TrueNAS YAML](apps/prusaslicer.yaml)<br>
 The PrusaSlicer 3D-printing slicer in your browser on a fast Selkies web desktop: slice and export G-code, no VNC client (amd64 + arm64).
 
 <br clear="all">
 
 <a id="rustdesk"></a>
 <img src=".github/readme-icons/rustdesk.png" width="84" align="left" alt="RustDesk">
-<a href="https://github.com/junkerderprovinz/rustdesk#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/rustdesk.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**RustDesk**<br>
+**[RustDesk](https://github.com/junkerderprovinz/rustdesk#readme)** · [TrueNAS YAML](apps/rustdesk.yaml)<br>
 Your own RustDesk server with a web console, accounts, an address book on every client and devices that can change their ID.
 
 <br clear="all">
 
 <a id="seafile"></a>
 <img src=".github/readme-icons/seafile.png" width="84" align="left" alt="Seafile">
-<a href="https://github.com/junkerderprovinz/seafile#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/seafile.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**Seafile**<br>
+**[Seafile](https://github.com/junkerderprovinz/seafile#readme)** · [TrueNAS YAML](apps/seafile.yaml)<br>
 The official Seafile server from one template, with its secrets generated on first start and MariaDB, Redis and the notification server built in on request.
 
 <br clear="all">
 
 <a id="securo"></a>
 <img src=".github/readme-icons/securo.png" width="84" align="left" alt="Securo">
-<a href="https://github.com/junkerderprovinz/securo#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/securo.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**Securo**<br>
+**[Securo](https://github.com/junkerderprovinz/securo#readme)** · [TrueNAS YAML](apps/securo.yaml)<br>
 The Securo finance manager with its worker and scheduler in one container, on your own PostgreSQL and Redis or on built-in ones.
 
 <br clear="all">
 
 <a id="soundcraft"></a>
 <img src=".github/readme-icons/soundcraft.png" width="84" align="left" alt="SoundCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#soundcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/soundcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**SoundCraft**<br>
+**[SoundCraft](https://github.com/junkerderprovinz/artcraft-apps#soundcraft)** · [TrueNAS YAML](apps/soundcraft.yaml)<br>
 SoundCraft on a Selkies web desktop, a multitrack audio workstation whose sound plays in the browser.
 
 <br clear="all">
 
 <a id="stellarium"></a>
 <img src=".github/readme-icons/stellarium.png" width="84" align="left" alt="Stellarium">
-<a href="https://github.com/junkerderprovinz/stellarium#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/stellarium.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**Stellarium**<br>
+**[Stellarium](https://github.com/junkerderprovinz/stellarium#readme)** · [TrueNAS YAML](apps/stellarium.yaml)<br>
 The Stellarium planetarium in your browser on a fast Selkies web desktop: pan the sky, zoom a nebula, scrub through time, no VNC client.
 
 <br clear="all">
 
 <a id="vectorcraft"></a>
 <img src=".github/readme-icons/vectorcraft.png" width="84" align="left" alt="VectorCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#vectorcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/vectorcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**VectorCraft**<br>
+**[VectorCraft](https://github.com/junkerderprovinz/artcraft-apps#vectorcraft)** · [TrueNAS YAML](apps/vectorcraft.yaml)<br>
 VectorCraft on a Selkies web desktop: vector illustration with paths and type, SVG and PDF in and out.
 
 <br clear="all">
 
 <a id="wordcraft"></a>
 <img src=".github/readme-icons/wordcraft.png" width="84" align="left" alt="WordCraft">
-<a href="https://github.com/junkerderprovinz/artcraft-apps#wordcraft"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/wordcraft.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**WordCraft**<br>
+**[WordCraft](https://github.com/junkerderprovinz/artcraft-apps#wordcraft)** · [TrueNAS YAML](apps/wordcraft.yaml)<br>
 WordCraft on a Selkies web desktop, a word processor in the browser that opens and saves Word documents.
 
 <br clear="all">
@@ -345,80 +283,64 @@ WordCraft on a Selkies web desktop, a word processor in the browser that opens a
 
 <a id="couchdb"></a>
 <img src=".github/readme-icons/couchdb.png" width="84" align="left" alt="CouchDB">
-<a href="https://github.com/junkerderprovinz/unraid-apps/blob/main/couchdb/README.md"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/couchdb.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**CouchDB**<br>
+**[CouchDB](https://github.com/junkerderprovinz/unraid-apps/blob/main/couchdb/README.md)** · [TrueNAS YAML](apps/couchdb.yaml)<br>
 The HTTP/JSON document database behind Obsidian LiveSync, on the official 3.x image with data, config and CORS mapped so they survive a recreate or update.
 
 <br clear="all">
 
 <a id="github-runner"></a>
 <img src=".github/readme-icons/github-runner.png" width="84" align="left" alt="GitHub-Runner">
-<a href="https://github.com/junkerderprovinz/github-runner#readme"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/github-runner.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**GitHub-Runner**<br>
+**[GitHub-Runner](https://github.com/junkerderprovinz/github-runner#readme)** · [TrueNAS YAML](apps/github-runner.yaml)<br>
 Self-hosted GitHub Actions runners for several repositories of a personal account in one container, removed from GitHub again when it stops.
 
 <br clear="all">
 
 <a id="pocket-id"></a>
 <img src=".github/readme-icons/pocket-id.png" width="84" align="left" alt="Pocket ID">
-<a href="https://github.com/junkerderprovinz/unraid-apps/blob/main/pocket-id/README.md"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/pocket-id.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**Pocket ID**<br>
+**[Pocket ID](https://github.com/junkerderprovinz/unraid-apps/blob/main/pocket-id/README.md)** · [TrueNAS YAML](apps/pocket-id.yaml)<br>
 Passkey login for every app on your server that speaks OpenID Connect, with users, groups and an audit log, on SQLite or PostgreSQL.
 
 <br clear="all">
 
 <a id="rustfs"></a>
 <img src=".github/readme-icons/rustfs.png" width="84" align="left" alt="RustFS">
-<a href="https://github.com/junkerderprovinz/unraid-apps/blob/main/rustfs/README.md"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/rustfs.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**RustFS**<br>
+**[RustFS](https://github.com/junkerderprovinz/unraid-apps/blob/main/rustfs/README.md)** · [TrueNAS YAML](apps/rustfs.yaml)<br>
 An S3 object store in Rust, with the two fixes it needs to run on Unraid at all. Pre-release: every version so far is a release candidate.
 
 <br clear="all">
 
 <a id="seaweedfs"></a>
 <img src=".github/readme-icons/seaweedfs.png" width="84" align="left" alt="SeaweedFS">
-<a href="https://github.com/junkerderprovinz/unraid-apps/blob/main/seaweedfs/README.md"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/seaweedfs.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**SeaweedFS**<br>
+**[SeaweedFS](https://github.com/junkerderprovinz/unraid-apps/blob/main/seaweedfs/README.md)** · [TrueNAS YAML](apps/seaweedfs.yaml)<br>
 Fast, S3-API-compatible object store on the official image, the actively-maintained alternative now that MinIO's open edition is done.
 
 <br clear="all">
 
 <a id="silo"></a>
 <img src=".github/readme-icons/silo.png" width="84" align="left" alt="Silo">
-<a href="https://github.com/junkerderprovinz/unraid-apps/blob/main/silo/README.md"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/silo.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**Silo**<br>
+**[Silo](https://github.com/junkerderprovinz/unraid-apps/blob/main/silo/README.md)** · [TrueNAS YAML](apps/silo.yaml)<br>
 MinIO, still maintained: PGSTY's fork of the open-source server, with the full web console. It reads an existing MinIO data folder as it is.
 
 <br clear="all">
 
 <a id="standardnotes-webui"></a>
 <img src=".github/readme-icons/standardnotes-webui.png" width="84" align="left" alt="Standard Notes Web UI">
-<a href="https://github.com/junkerderprovinz/unraid-apps/blob/main/standardnotes-webui/README.md"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/standardnotes-webui.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**Standard Notes Web UI**<br>
+**[Standard Notes Web UI](https://github.com/junkerderprovinz/unraid-apps/blob/main/standardnotes-webui/README.md)** · [TrueNAS YAML](apps/standardnotes-webui.yaml)<br>
 The official Standard Notes web client, self-hosted next to your own sync server for end-to-end encrypted notes in the browser.
 
 <br clear="all">
 
 <a id="versitygw"></a>
 <img src=".github/readme-icons/versitygw.png" width="84" align="left" alt="VersityGW">
-<a href="https://github.com/junkerderprovinz/unraid-apps/blob/main/versitygw/README.md"><img src="https://img.shields.io/badge/Repository%20%26%20ReadMe-393939?style=for-the-badge&logo=github&logoColor=white" align="right" alt="Repository &amp; ReadMe"></a>
-<a href="apps/versitygw.yaml"><img src="https://img.shields.io/badge/TrueNAS%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" align="right" alt="TrueNAS YAML"></a>
 
-**VersityGW**<br>
+**[VersityGW](https://github.com/junkerderprovinz/unraid-apps/blob/main/versitygw/README.md)** · [TrueNAS YAML](apps/versitygw.yaml)<br>
 An S3 API in front of a share you already have: top-level folders become buckets, and every file stays readable over SMB and NFS at the same time.
 
 <br clear="all">
