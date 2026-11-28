@@ -7,18 +7,31 @@
 
 <p align="center">
   <a href="https://github.com/junkerderprovinz/truenas-apps/actions/workflows/generate.yml"><img src="https://img.shields.io/github/actions/workflow/status/junkerderprovinz/truenas-apps/generate.yml?branch=main&label=Generate&style=for-the-badge&logo=githubactions&logoColor=white" alt="Generate" height="36"></a>&nbsp;
-  <a href="#apps"><img src="https://img.shields.io/badge/Apps-39-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Apps" height="36"></a>&nbsp;
+  <a href="#apps"><img src="https://img.shields.io/badge/Apps-40-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Apps" height="36"></a>&nbsp;
   <a href="https://github.com/junkerderprovinz/truenas-apps/commits/main"><img src="https://img.shields.io/github/last-commit/junkerderprovinz/truenas-apps?branch=main&style=for-the-badge&logo=git&logoColor=white&label=Updated" alt="Last commit" height="36"></a>&nbsp;
   <a href="https://www.truenas.com/truenas-community-edition/"><img src="https://img.shields.io/badge/TrueNAS-Install%20via%20YAML-0095d5?style=for-the-badge&logo=truenas&logoColor=white" alt="TrueNAS Install via YAML" height="36"></a>&nbsp;
   <a href="LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge&logo=opensourceinitiative&logoColor=white" alt="License" height="36"></a>
 </p>
 
 <p align="center">
-Ready-made app files for <a href="https://www.truenas.com/truenas-community-edition/">TrueNAS</a> with junkerderprovinz's containers, grouped like the profile: <b>Apps</b> (my own software), <b>Images</b> (my own image builds of third-party apps) and <b>Wrappers</b> (thin templates over an upstream image). TrueNAS installs apps from its own catalog only, so each app here is one file to paste under <b>Install via YAML</b>.
+Ready-made app files for <a href="https://www.truenas.com/truenas-community-edition/">TrueNAS</a> with junkerderprovinz's containers, grouped like the profile: <b>Apps</b> (my own software), <b>Images</b> (my own image builds of third-party apps) and <b>Wrappers</b> (thin templates over an upstream image). BombVault is in TrueNAS's own catalog. Every other app is one file to paste under <b>Install via YAML</b>, and each one has been installed and started on TrueNAS 25.10.
 </p>
 
 
 <!-- apps:start -->
+## In the catalog
+
+*In TrueNAS's own catalog: install it under Apps, Discover Apps, without a file from here.*
+
+<a id="bombvault"></a>
+<img src=".github/readme-icons/bombvault.png" width="84" align="left" alt="BombVault">
+
+**[BombVault](https://github.com/junkerderprovinz/bombvault#readme)** · [TrueNAS catalog](https://apps.truenas.com/catalog/bombvault_community/)<br>
+Backup and full disaster recovery for containers, VMs and the flash, powered by restic, with one-click backup and cross-server restore.
+
+<br clear="all">
+
+
 ## Apps
 
 *My own software, built and published by junkerderprovinz. Full docs live in each app's own repository.*

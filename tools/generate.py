@@ -22,6 +22,7 @@ import yaml
 ROOT = Path(__file__).resolve().parent.parent
 FEED_URL = "https://github.com/junkerderprovinz/unraid-apps"
 POOL = "/mnt/tank"
+CATALOG_LINE = "*In TrueNAS's own catalog: install it under Apps, Discover Apps, without a file from here.*"
 
 # TrueNAS runs its own apps as the apps user and group.
 SYSTEM_VALUES = {"PUID": "568", "PGID": "568"}
@@ -114,18 +115,23 @@ def readme_cards(feed, apps):
 
     Each app keeps the card, description and group (Apps, Images, Wrappers) it
     has in unraid-apps, so the two READMEs cannot drift apart. The compose
-    link gives way to the TrueNAS file.
+    link gives way to the TrueNAS file, or to the catalog page for an app that
+    TrueNAS lists itself.
     """
     source = (feed / "README.md").read_text(encoding="utf-8")
     groups = {}
-    for app in apps:
+    for app, overrides in apps.items():
         start = source.index(f'<img src=".github/readme-icons/{app}.png"')
         end = source.index('<br clear="all">', start) + len('<br clear="all">')
         heading = list(re.finditer(r"^## (\w+)\n\n(\*.+\*)$", source[:start], re.M))[-1]
         card = re.sub(r"\]\(([\w-]+/README\.md)\)", rf"]({FEED_URL}/blob/main/\1)", source[start:end])
-        card = re.sub(r"\)\*\*[^\n]*<br>", f")** · [TrueNAS YAML](apps/{app}.yaml)<br>", card, count=1)
-        groups.setdefault(heading.group(1), (heading.group(2), []))[1].append(f'<a id="{app}"></a>\n{card}')
-    order = [h for h in ("Apps", "Images", "Wrappers") if h in groups]
+        if "catalog" in overrides:
+            link, group = f"[TrueNAS catalog]({overrides['catalog']})", ("In the catalog", CATALOG_LINE)
+        else:
+            link, group = f"[TrueNAS YAML](apps/{app}.yaml)", heading.groups()
+        card = re.sub(r"\)\*\*[^\n]*<br>", f")** · {link}<br>", card, count=1)
+        groups.setdefault(group[0], (group[1], []))[1].append(f'<a id="{app}"></a>\n{card}')
+    order = [h for h in ("In the catalog", "Apps", "Images", "Wrappers") if h in groups]
     parts = [f"## {h}\n\n{groups[h][0]}\n\n" + "\n\n".join(groups[h][1]) for h in order]
     return "\n\n\n".join(parts)
 
@@ -152,7 +158,8 @@ def main():
 
     wanted = {}
     for app, overrides in apps.items():
-        wanted[f"apps/{app}.yaml"] = build(args.feed, gen_compose, app, overrides).encode("utf-8")
+        if "catalog" not in overrides:
+            wanted[f"apps/{app}.yaml"] = build(args.feed, gen_compose, app, overrides).encode("utf-8")
         wanted[f".github/readme-icons/{app}.png"] = (
             args.feed / ".github" / "readme-icons" / f"{app}.png"
         ).read_bytes()
